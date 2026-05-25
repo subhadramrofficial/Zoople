@@ -1,0 +1,22 @@
+*{
+    background-color: rgb(235, 244, 241);
+}
+li:hover{
+    color: red;
+}
+li:first-child{
+    background-color: black;
+    color: orange;
+}
+li:last-child{
+    color:rgb(55, 164, 5)
+}
+input:focus{
+    background-color: green;
+}
+li.red{
+    color: blueviolet;
+}
+li.green::first-letter{
+    color: blue;
+}

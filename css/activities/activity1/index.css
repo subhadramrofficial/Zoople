@@ -1,0 +1,36 @@
+body{
+    text-align: center;
+    background-color: rgb(217, 217, 188);
+}
+.good{
+    border-style: solid;
+    margin: 0 200px;
+    border-radius: 15px;
+    background-color: rgb(238, 222, 222);
+    box-shadow: 4px 4px 10px rgba(58, 56, 56,0.5);
+    border-color: orange; 
+    margin-bottom: 25px;
+}
+img{
+    margin:10px ;
+    border-radius: 10px;
+    border-color: orange;
+    border-style: solid;
+}
+.card{
+    border-style: dashed;
+    border-color: orange;
+    border-radius: 10px;
+    margin: 25px 0;
+    padding: 20px;
+    background-color: rgb(237, 212, 180);
+    margin: 0 400px;
+}
+button{
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: orange;
+    border-color: orange;
+    border-style: solid;
+}

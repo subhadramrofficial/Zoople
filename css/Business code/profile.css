@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    /* margin-left: 50px; */
+    
+}
+.card{
+    border-radius: 15px;
+    /* border-color: blue; */
+    border-style: solid;
+    width: 250px;
+    min-height: 200px;
+    padding-top: 10px;
+}
+img{
+    width: 50%;
+    height: 50%;
+    padding-top: 10px;
+    border-radius: 50%;
+    border-color: blue;
+    border-style: solid;
+}
+.card:hover{
+    border-color: blue;
+    box-shadow: 10px 10px 10px rgba(196, 31, 31,0.5);
+}

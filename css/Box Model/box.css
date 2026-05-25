@@ -1,0 +1,36 @@
+body{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: black;
+    margin-bottom: 40px;
+}
+.card{
+    width: 300px;
+    min-height: 150px;
+    max-width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 15px;
+    box-sizing: border-box;
+    /* includes padding + border in total width */
+    outline: 3px dashed rgb(215, 113, 18) ; 
+    /* temporary visula aid */
+    outline-offset: 5px;
+    /* gap between outline and border */
+    box-shadow:10px 25px 50px rgba(31, 214, 175,0.5) ;
+}
+.card h2{
+    color: blue;
+    margin-bottom: 10px;
+}
+.card p{
+line-height: 1.5;
+}

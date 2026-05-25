@@ -1,0 +1,30 @@
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+thead {
+  background-color: black;
+  color: white;
+}
+table {
+  border-style: solid;
+}
+.student-table tbody tr:nth-child(even) {
+  background-color: pink;
+}
+th,
+td {
+  padding: 10px 15px;
+  width: 50px;
+  border: 2px solid green;
+  font-weight: bolder;
+}
+.student-table tbody tr:hover {
+  background-color: rgb(20, 147, 178);
+  color: white;
+}
+caption {
+  font-weight: bolder;
+  font-size: larger;
+}

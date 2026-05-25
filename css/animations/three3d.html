@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner</title>
+    <style>
+        .outer{
+            width: 120px;
+            height: 80px;
+            transform-style: preserve-3d;
+            transition: transform .6s;
+            background: #cfe;
+        }
+        .outer:hover{
+            transform: rotateY(78deg);
+        }
+        .inner{
+            position: relative;
+            transform: translateZ(20px);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1 class="inner">Inner</h1>
+    </div>
+</body>
+</html>

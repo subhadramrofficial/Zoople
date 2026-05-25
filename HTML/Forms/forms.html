@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <center>
+      <h2>Personal Information</h2>
+      <form bindsubmit="">
+        <label for="Full name">Full Name:</label>
+        <input
+          type="text"
+          placeholder="Enter full name"
+          name="Full name"
+          id="Full name"
+        />
+        <br />
+        <br />
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="Enter email" name="Email" id="Email" />
+        <br />
+        <br />
+        <label for="age">Age:</label>
+        <input type="text" placeholder="Enter Age" name="age" id="age" />
+        <br />
+        <br />
+        <label for="date">DOB:</label>
+        <input type="date" name="date" id="date" />
+        <br />
+        <br />
+        <label for="gender">Gender:</label> <br />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" /> <br> <br>
+        <label for="languages">Languages Known:</label> <br>
+        <input type="checkbox" value="English" name="languages" id="english" />English
+        <input type="checkbox" value="Tamil" name="languages" id="tamil" />Tamil
+        <input type="checkbox" value="Hindi" name="languages" id="hindi" />Hindi <br><br>
+        <input type="file" name="resume" id="resume" /> <br><br>
+        <input type="button" value="Submit">
+      </form>
+    </center>
+  </body>
+</html>
