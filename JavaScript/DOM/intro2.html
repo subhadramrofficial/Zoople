@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="name">John Doe</h1>
+    <p id="desc">Web Developer</p>
+    <br /><br />
+    <button id="changeName">Change Name</button>
+    <script>
+      let heading = document.getElementById("name");
+      let btn = document.getElementById("changeName");
+      btn.addEventListener("click", function () {
+        heading.textContent = "Jane Smith";
+      });
+    </script>
+  </body>
+</html>

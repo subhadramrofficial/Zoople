@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="myForm">
+      <input type="text" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form>
+    <script>
+      let form = document.getElementById("myForm");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log("Form submitted successfully!");
+      });
+    </script>
+  </body>
+</html>
