@@ -2,7 +2,6 @@ import User from "../models/user.model.js";
 import Post from "../models/post.model.js";
 
 
-// GET USER PROFILE
 export const getUserProfile = async (req, res) => {
     try {
         const user = await User.findById(req.params.id)
@@ -34,7 +33,6 @@ export const getUserProfile = async (req, res) => {
 };
 
 
-// UPDATE PROFILE
 export const updateProfile = async (req, res) => {
     try {
         const { name, bio, profileImage } = req.body;
@@ -71,7 +69,6 @@ export const updateProfile = async (req, res) => {
 };
 
 
-// GET USER POSTS
 export const getUserPosts = async (req, res) => {
     try {
         const posts = await Post.find({

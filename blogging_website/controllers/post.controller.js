@@ -1,7 +1,6 @@
 import Post from "../models/post.model.js";
 
 
-// CREATE POST
 export const createPost = async (req, res) => {
     try {
         const {
@@ -43,7 +42,6 @@ export const createPost = async (req, res) => {
 };
 
 
-// GET ALL POSTS
 export const getAllPosts = async (req, res) => {
     try {
         const page = Number(req.query.page) || 1;
@@ -76,7 +74,6 @@ export const getAllPosts = async (req, res) => {
 };
 
 
-// GET SINGLE POST
 export const getSinglePost = async (req, res) => {
     try {
         const post = await Post.findById(req.params.id)
@@ -102,8 +99,6 @@ export const getSinglePost = async (req, res) => {
     }
 };
 
-
-// GET MY POSTS
 export const getMyPosts = async (req, res) => {
     try {
         const posts = await Post.find({
@@ -176,7 +171,6 @@ export const updatePost = async (req, res) => {
 };
 
 
-// DELETE POST
 export const deletePost = async (req, res) => {
     try {
         const post = await Post.findById(req.params.id);
@@ -211,7 +205,6 @@ export const deletePost = async (req, res) => {
 };
 
 
-// LIKE / UNLIKE
 export const toggleLike = async (req, res) => {
     try {
         const post = await Post.findById(req.params.id);
@@ -255,8 +248,6 @@ export const toggleLike = async (req, res) => {
     }
 };
 
-
-// GET LIKED POSTS
 export const getLikedPosts = async (req, res) => {
     try {
         const posts = await Post.find({
@@ -280,7 +271,6 @@ export const getLikedPosts = async (req, res) => {
 };
 
 
-// SEARCH POSTS
 export const searchPosts = async (req, res) => {
     try {
         const { keyword } = req.query;
@@ -331,8 +321,6 @@ export const searchPosts = async (req, res) => {
     }
 };
 
-
-// CATEGORY
 export const getPostsByCategory = async (req, res) => {
     try {
         const posts = await Post.find({

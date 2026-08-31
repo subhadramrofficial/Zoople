@@ -1,8 +1,6 @@
 import Comment from "../models/comment.model.js";
 import Post from "../models/post.model.js";
 
-
-// ADD COMMENT
 export const addComment = async (req, res) => {
     try {
         const { content } = req.body;
@@ -46,8 +44,6 @@ export const addComment = async (req, res) => {
     }
 };
 
-
-// GET COMMENTS
 export const getComments = async (req, res) => {
     try {
         const comments = await Comment.find({
@@ -71,7 +67,6 @@ export const getComments = async (req, res) => {
 };
 
 
-// DELETE COMMENT
 export const deleteComment = async (req, res) => {
     try {
         const comment = await Comment.findById(req.params.commentId);

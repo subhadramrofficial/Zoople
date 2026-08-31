@@ -2,7 +2,6 @@ import User from "../models/user.model.js";
 import bcrypt from "bcryptjs";
 import generateToken from "../utils/jwt.js";
 
-// REGISTER
 export const register = async (req, res) => {
     try {
         const { name, email, password } = req.body;
@@ -52,8 +51,6 @@ export const register = async (req, res) => {
     }
 };
 
-
-// LOGIN
 export const login = async (req, res) => {
     try {
         const { email, password } = req.body;
@@ -109,8 +106,6 @@ export const login = async (req, res) => {
     }
 };
 
-
-// CURRENT USER
 export const getMe = async (req, res) => {
     try {
         res.status(200).json({
