@@ -33,6 +33,7 @@
 
 // export default App;
 
+
 function ArticleCard({ isBreaking }) {
   const title = "New Climate Report Released";
   return (
@@ -52,12 +53,17 @@ function ArticleMeta() {
   );
 }
 
+function Demo() {
+  return <h1 className="text-4xl font-bold text-blue-500">Hello Tailwind!</h1>;
+}
+
 function App() {
   return (
     <div>
       <ArticleCard isBreaking={true} />
       <ArticleCard isBreaking={false} />
       <ArticleMeta />
+      <Demo/>
     </div>
   );
 }
