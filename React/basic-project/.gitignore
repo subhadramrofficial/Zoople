@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+roughwork
 *.local
 
 # Editor directories and files
