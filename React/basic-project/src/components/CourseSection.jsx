@@ -3,19 +3,16 @@ import CourseCard from "./CourseCard";
 function CourseSection() {
   return (
     <section className="mt-10">
-
-      {/* Heading */}
+      {}
       <div className="flex justify-between items-center mb-5">
-        <h2 className="text-2xl font-bold">
-          Featured Courses
-        </h2>
+        <h2 className="text-2xl font-bold">Featured Courses</h2>
 
         <button className="text-purple-600 font-medium">
           View all courses →
         </button>
       </div>
 
-      {/* Cards */}
+      {}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
         <CourseCard
           title="React Development"
@@ -44,9 +41,7 @@ function CourseSection() {
           rating="4.8"
           lessons="20"
         />
-
       </div>
-
     </section>
   );
 }

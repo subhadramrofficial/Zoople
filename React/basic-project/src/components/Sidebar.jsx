@@ -1,7 +1,7 @@
 function Sidebar() {
   return (
     <aside className="hidden md:block w-52 min-h-screen border-r border-gray-200 bg-white p-5">
-      {/* Menu */}
+      {}
       <div className="space-y-3">
         <div className="bg-purple-600 text-white rounded-lg px-4 py-3 flex items-center gap-3">
           <span>🏠</span>
@@ -39,7 +39,7 @@ function Sidebar() {
         </div>
       </div>
 
-      {/* Upgrade Card */}
+      {}
       <div className="mt-8 bg-purple-50 rounded-xl p-4">
         <h3 className="font-bold text-purple-700">Upgrade to Pro 👑</h3>
         <p className="text-sm text-gray-600 mt-2">
