@@ -9,10 +9,7 @@ function Header() {
 
       {}
       <nav className="hidden md:flex items-center gap-8">
-        <a
-          href="#"
-          className="text-purple-600 font-medium border-b-2 border-purple-600 pb-6"
-        >
+        <a href="#" className="text-gray-700 hover:text-purple-600">
           Home
         </a>
 
