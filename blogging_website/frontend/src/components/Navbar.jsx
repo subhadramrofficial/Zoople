@@ -25,11 +25,16 @@ const Navbar = () => {
           <Link to="/" className="text-gray-600 hover:text-black">
             Home
           </Link>
-          <Link to="/profile" className="text-gray-600 hover:text-black">
-            Profile
-          </Link>
+
           {token ? (
             <>
+              <Link
+                to="/profile"
+                className="text-gray-600 hover:text-black"
+              >
+                Profile
+              </Link>
+
               <Link
                 to="/create-post"
                 className="text-gray-600 hover:text-black"

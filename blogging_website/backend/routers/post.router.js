@@ -12,13 +12,13 @@ import {
     searchPosts,
     getPostsByCategory
 } from "../controllers/post.controller.js";
-import upload from "../utils/upload.js";
+import { handleImageUpload } from "../utils/upload.js";
 
 import protect from "../middlewares/auth.middleware.js";
 
 const router = express.Router();
 
-router.post("/", protect, upload.single("image"), createPost);
+router.post("/", protect, handleImageUpload, createPost);
 
 router.get("/", protect, getAllPosts);
 
@@ -32,7 +32,7 @@ router.get("/liked-posts", protect, getLikedPosts);
 
 router.get("/:id", getSinglePost);
 
-router.put("/:id", protect, upload.single("image"), updatePost);
+router.put("/:id", protect, handleImageUpload, updatePost);
 
 router.delete("/:id", protect, deletePost);
 
